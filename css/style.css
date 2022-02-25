@@ -140,6 +140,7 @@ img {
  メインビジュアル
 ---------------------------------*/
 .mv {
+  background-color: lightcyan;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,6 +214,12 @@ img {
 /*--------------------------------
  Skill
 ---------------------------------*/
+#skill {
+  background-color: lightcyan;
+}
+#skill p{
+  text-align: center;
+}
 .skill-list {
   display: flex;
   flex-wrap: wrap;
