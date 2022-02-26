@@ -305,6 +305,7 @@ img {
   background-color: #4c4c4c;
   bottom: 75px;
   cursor: pointer;
+  display: none;
   font-weight: bold;
   height: 50px;
   position: fixed;
