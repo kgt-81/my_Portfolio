@@ -530,10 +530,6 @@ img {
     line-height: 1.7;
   }
 
-  .profile-body p:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
   /* フッター */
   .footer {
     padding: 20px;
