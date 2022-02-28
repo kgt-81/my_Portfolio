@@ -1,22 +1,21 @@
 body {
+  color: #333;
   font-family: 'Inter', sans-serif;
-  
   font-size: 15px;
   letter-spacing: .05em;
-  color: #333;
 }
 
 a {
+  color: #1ca9e3;
   transition: opacity .3s;
   text-decoration: none;
-  color: #1ca9e3;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: bottom;
   border-style: none;
+  height: auto;
+  max-width: 100%;
+  vertical-align: bottom;
 }
 
 
@@ -41,7 +40,9 @@ img {
 }
 
 .section:nth-of-type(even) {
-  background-color: #e0ffff;
+  background-image: url("../img/pastel_00033.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section:nth-of-type(odd) {
@@ -58,13 +59,13 @@ img {
  見出し
 ---------------------------------*/
 .title {
+  color: #333;
   font-size: 34px;
   font-weight: bold;
+  letter-spacing: .05em;
   line-height: 1;
   margin-bottom: 40px;
   text-align: center;
-  letter-spacing: .05em;
-  color: #333;
 }
 
 .lead {
@@ -77,17 +78,17 @@ img {
 ヘッダー
 ---------------------------------*/
 .header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
   background-color: #fff;
   box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .header .container {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-between;
   padding: 20px 40px;
 }
@@ -95,9 +96,9 @@ img {
 .header-logo {
   font-size: 20px;
   font-weight: bold;
+  letter-spacing: .05em;
   line-height: 1.2;
   margin-right: 20px;
-  letter-spacing: .05em;
 }
 
 .header-logo a {
@@ -116,26 +117,26 @@ img {
 }
 
 .gnav-item a {
-  position: relative;
+  color: #333;
+  display: inline-block;
   font-size: 13px;
   font-weight: bold;
-  display: inline-block;
-  padding: 5px 0;
-  transition: .3s;
   letter-spacing: .05em;
-  color: #333;
+  padding: 5px 0;
+  position: relative;
+  transition: .3s;
 }
 .gnav-item a:after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 3px;
-  content: "";
-  transition: .3s;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
   background-color: #333;
+  bottom: 0;
+  content: "";
+  left: 50%;
+  position: absolute;
+  height: 3px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transition: .3s;
+  width: 0;
 }
 
 .gnav-item a:hover:after {
@@ -146,11 +147,13 @@ img {
  メインビジュアル
 ---------------------------------*/
 .mv {
-  background-color: #e0ffff;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  background-image: url("../img/pastel_00033.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
   height: 85vh;
+  justify-content: center;
   text-align: center;
 }
 
@@ -159,18 +162,31 @@ img {
 }
 
 .mv-title {
+  animation: fadeIn ease-in 1s 0s alternate;
   font-size: 60px;
   font-weight: bold;
+  letter-spacing: .1em;
   line-height: 1.2;
   margin-bottom: 5px;
-  letter-spacing: .1em;
 }
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    transform: scale(.5);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .mv-subtitle {
   font-size: 20px;
   font-weight: bold;
+  letter-spacing: .08em;
   line-height: 1;
   margin-bottom: 40px;
-  letter-spacing: .08em;
 }
 
 .mv-text {
@@ -188,22 +204,31 @@ img {
 }
 
 .works-item {
-  width: 31.74603%;
+  color: #333;
   margin-right: 1.58730%;
   margin-bottom: 40px;
-  color: #333;
+  width: 31.74603%;
 }
 
 .works-item:hover {
   opacity: .9;
 }
 
+.works-item:hover .works-img img{
+  transform: scale(1.02);
+}
+
 .works-item:nth-of-type(3n) {
   margin-right: 0;
 }
 
-.works-img img {
+.works-img {
   border: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+
+.works-img img {
+  transition-duration: 0.2s;
 }
 
 .works-name {
@@ -232,17 +257,17 @@ img {
 }
 
 .skill-item {
-  display: flex;
   align-items: flex-start;
+  display: flex;
   justify-content: space-between;
-  width: 48%;
   margin-bottom: 50px;
+  width: 48%;
 }
 
 .skill-img {
-  width: 60px;
   height: auto;
   margin-right: 20px;
+  width: 60px;
 }
 
 .skill-body {
@@ -264,13 +289,13 @@ img {
 .profile {
   display: flex;
   flex-wrap: wrap;
-  max-width: 800px;
   margin: 0 auto;
+  max-width: 800px;
 }
 .profile-img {
-  width: 20%;
-  margin-right: 30px;
   border-radius: 50%;
+  margin-right: 30px;
+  width: 20%;
 }
 .profile-img img {
   border-radius: 50%;
@@ -323,14 +348,14 @@ img {
  フッター
 ---------------------------------*/
 .footer {
-  padding: 30px;
   background-color: #333;
+  padding: 30px;
 }
 
 .copyright {
+  color: #797979;
   font-size: 10px;
   text-align: center;
-  color: #797979;
 }
 
 /*--------------------------------
@@ -352,16 +377,16 @@ img {
 }
 
 .article-body {
-  max-width: 720px;
   margin: 0 auto;
   margin-bottom: 80px;
+  max-width: 720px;
 }
 
 .article-body h3 {
-  position: relative;
   font-size: 18px;
   margin-bottom: 5px;
   padding-left: 1em;
+  position: relative;
 }
 
 .article-body h3:not(:first-child) {
@@ -369,20 +394,24 @@ img {
 }
 
 .article-body h3::before {
+  background-color: #333;
+  border-radius: 3px;
+  content: "";
+  height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   width: 4px;
-  height: 100%;
-  content: "";
-  border-radius: 3px;
-  background-color: #333;
 }
 
 .article-body p {
   font-size: 15px;
   line-height: 1.8;
   margin-bottom: 30px;
+}
+
+.article-body img {
+  border: 1px solid #e6e6e6;
 }
 
 .home-link {
@@ -499,8 +528,8 @@ img {
   }
 
   .skill-item {
-    width: 100%;
     margin-bottom: 35px;
+    width: 100%;
   }
 
   .skill-item:last-child {
@@ -521,9 +550,9 @@ img {
     display: block;
   }
   .profile-img {
-    width: 150px;
     margin: 0 auto;
     margin-bottom: 25px;
+    width: 150px;
   }
 
   .profile-body p {
