@@ -339,9 +339,18 @@ img {
   width: 50px;
 }
 
+.page-top:hover{
+  background-color: #fff;
+  border: 1px solid #4c4c4c;
+
+}
+
 .page-top .material-icons-outlined {
   color: #fff;
   line-height: 50px;
+}
+.page-top:hover .material-icons-outlined {
+  color: #4c4c4c;
 }
 
 /*--------------------------------
