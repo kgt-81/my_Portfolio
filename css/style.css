@@ -154,6 +154,7 @@ img {
   display: flex;
   height: 85vh;
   justify-content: center;
+  position: relative;
   text-align: center;
 }
 
@@ -168,16 +169,22 @@ img {
   letter-spacing: .1em;
   line-height: 1.2;
   margin-bottom: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0;
+  transform: translate(-50%,-50%);
+  z-index: 100;
 }
 
 @keyframes fadeIn{
   from{
     opacity: 0;
-    transform: scale(.5);
+    transform: scale(.5) translate(-50%,-50%);
   }
   to{
     opacity: 1;
-    transform: scale(1);
+    transform: scale(1) translate(-50%,-50%);
   }
 }
 
@@ -194,6 +201,17 @@ img {
   line-height: 1.8;
 }
 
+.slides {
+  left: 0;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.slider .slick-slide {
+  max-height: 400px;
+}
 /*--------------------------------
  Works
 ---------------------------------*/

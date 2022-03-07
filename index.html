@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
   <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/slick.css">
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="img/favicon.ico" />
 </head>
@@ -47,6 +48,14 @@
       <div class="mv">
         <div class="mv-container">
           <p class="mv-title">PORTFOLIO</p>
+          <div class="slides">
+            <div><img src="./img/01.jpg" alt=""></div>
+            <div><img src="./img/02.jpg" alt=""></div>
+            <div><img src="./img/03.jpg" alt=""></div>
+            <div><img src="./img/04.jpg" alt=""></div>
+            <div><img src="./img/05.jpg" alt=""></div>
+            <div><img src="./img/06.jpg" alt=""></div>
+          </div><!-- /.slides -->
         </div>
       </div>
       <!-- /mv -->
@@ -139,6 +148,24 @@
 
   </div>
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/slick.js"></script>
+  <script>
+    $(function () {
+      $('.slides').slick({
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 8000,
+        cssEase: 'linear',
+        arrows:false,
+        swipe: false,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        centerMode: true,
+        initialSlide: 3,
+        variableWidth: true,
+      });
+    })
+  </script>
   <script type='text/javascript' src="js/script.js"></script>
 </body>
 </html>
