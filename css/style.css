@@ -157,7 +157,6 @@ img {
   left: 50%;
   letter-spacing: .1em;
   line-height: 1.2;
-  margin-bottom: 5px;
   opacity: 0;
   position: absolute;
   text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
@@ -257,10 +256,17 @@ img {
 /*--------------------------------
  Skill
 ---------------------------------*/
-#skill p{
+#skill dl{
+  display: flex;
   font-weight: normal;
-  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
 }
+
+#skill dt{
+  font-weight: bold;
+}
+
 .skill-list {
   display: flex;
   flex-wrap: wrap;
