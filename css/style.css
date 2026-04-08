@@ -151,7 +151,7 @@ img {
 }
 
 .mv-title {
-  animation: fadeIn ease-in 1s 0.2s forwards;
+  animation: fadeIn ease-in 1s .2s forwards;
   font-size: 60px;
   font-weight: bold;
   left: 50%;
@@ -195,7 +195,7 @@ img {
 
 .slides{
   opacity: 0;
-  transition: 0.6s;
+  transition: .6s;
 }
 
 .slick-initialized{
@@ -211,12 +211,12 @@ img {
 .works-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: -40px;
 }
 
 .works-item {
   color: #333;
-  margin-right: 1.58730%;
   margin-bottom: 40px;
   width: 31.74603%;
 }
@@ -229,27 +229,25 @@ img {
   transform: scale(1.02);
 }
 
-.works-item:nth-of-type(3n) {
-  margin-right: 0;
-}
-
 .works-img {
+  aspect-ratio: 4 / 3;
   border: 1px solid #e6e6e6;
   overflow: hidden;
 }
 
 .works-img img {
-  transition-duration: 0.2s;
+  height: 100%;
+  transition-duration: .2s;
 }
 
 .works-name {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   margin-top: 8px;
 }
 
 .works-info {
-  font-size: 10px;
+  font-size: 14px;
   margin-top: 5px;
 }
 
